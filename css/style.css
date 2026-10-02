@@ -288,3 +288,8 @@ footer a { color: #c9d6dc; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .btn, .card { transition: none; }
 }
+@media (max-width: 860px) {
+  .nav-toggle { display: block; }
+  .nav-links { display: none; position: absolute; left: 0; right: 0; top: 64px; background: var(--paper); border-bottom: 1px solid var(--line); flex-direction: column; align-items: flex-start; padding: 16px; gap: 14px; }
+  .nav-links.open { display: flex; }
+}
