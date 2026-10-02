@@ -322,3 +322,17 @@ footer a { color: #c9d6dc; }
 .portrait { box-shadow: 14px 14px 0 #ffe27a; }
 .contact { background: linear-gradient(120deg, #14692f 0%, #1f8a45 60%, #2a78b8 130%); }
 .btn-primary { box-shadow: 0 6px 16px rgba(31, 138, 69, 0.25); }
+
+/* Contact section: light green, orange and blue actions, dark bold details */
+.contact { background: linear-gradient(120deg, #e3f6e6 0%, #d2efd8 60%, #d8ecfb 130%); color: var(--ink); }
+.contact h2 { color: var(--ink); }
+.contact .eyebrow { color: var(--teal-2); }
+.contact .lede { color: var(--ink-2); }
+.contact .btn-primary { background: #d9620a; color: #fff; box-shadow: 0 6px 16px rgba(217, 98, 10, 0.3); }
+.contact .btn-primary:hover { background: #b9500a; color: #fff; }
+.contact .btn-ghost { background: #1f6fbf; border-color: #1f6fbf; color: #fff; box-shadow: 0 6px 16px rgba(31, 111, 191, 0.28); }
+.contact .btn-ghost:hover { background: #17558f; border-color: #17558f; color: #fff; }
+.contact-card { background: #ffffff; border: 1px solid #bfe3c7; box-shadow: var(--shadow); }
+.contact-card dl { font-weight: 700; color: var(--ink); }
+.contact-card dt { color: var(--teal-2); }
+.contact-card a { color: var(--ink); }
