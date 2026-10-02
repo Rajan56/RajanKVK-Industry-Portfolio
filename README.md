@@ -2,7 +2,7 @@
 
 Performance and KPI analytics, process improvement, digital twins and sustainability performance for industrial companies.
 
-**Live site:** https://rajan56.github.io/RajanKVK03Portfolio/
+**Live site:** https://rajan56.github.io/RajanKVK-Industry-Portfolio/
 
 ## What is on the page
 
