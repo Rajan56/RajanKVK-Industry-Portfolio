@@ -4,7 +4,7 @@
 
   var $ = function (id) { return document.getElementById(id); };
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var C = { teal: "#6fd0c7", amber: "#e09a4a", red: "#f09a85", green: "#7fd6a0", grid: "rgba(255,255,255,0.09)", text: "#a9bac3", white: "#ffffff" };
+  var C = { teal: "#7fdc93", amber: "#ffd45c", red: "#f09a85", green: "#7fd6a0", grid: "rgba(255,255,255,0.09)", text: "#a9bac3", white: "#ffffff" };
 
   function setupCanvas(cv) {
     var dpr = window.devicePixelRatio || 1;
@@ -216,7 +216,7 @@
     var X = function (k) { return L + k * (W - L - R) / 39; };
     var Y = function (v) { return T + (hi - v) / (hi - lo) * (H - T - B); };
     ctx.font = "11px Inter, system-ui, sans-serif";
-    ctx.fillStyle = "rgba(111,208,199,0.06)";
+    ctx.fillStyle = "rgba(127,220,147,0.06)";
     ctx.fillRect(X(19.5), T, W - R - X(19.5), H - T - B);
     function hline(v, col, dash, label) {
       ctx.beginPath(); ctx.setLineDash(dash); ctx.strokeStyle = col; ctx.lineWidth = 1;
@@ -309,7 +309,7 @@
         var q = Math.max(0, Math.min(7, Math.round((TW.c[i] - TW.c[i - 1]) / 4)));
         for (k = 0; k < q; k++) { ctx.fillStyle = C.amber; ctx.fillRect(x0 - 20 - (k % 4) * 15, cy - 26 - Math.floor(k / 4) * 15, 12, 12); }
       }
-      ctx.fillStyle = isB ? "rgba(224,154,74,0.16)" : "rgba(255,255,255,0.07)";
+      ctx.fillStyle = isB ? "rgba(255,212,92,0.16)" : "rgba(255,255,255,0.07)";
       ctx.strokeStyle = isB ? C.amber : "rgba(255,255,255,0.3)"; ctx.lineWidth = isB ? 2 : 1;
       ctx.beginPath();
       if (ctx.roundRect) ctx.roundRect(x0, cy - bh / 2, bw, bh, 10); else ctx.rect(x0, cy - bh / 2, bw, bh);
@@ -415,7 +415,7 @@
     ctx.beginPath();
     for (i = 0; i < hero.d.length; i++) { if (i === 0) ctx.moveTo(X(i + off), Y(hero.d[i])); else ctx.lineTo(X(i + off), Y(hero.d[i])); }
     ctx.strokeStyle = C.teal; ctx.lineWidth = 2; ctx.stroke();
-    ctx.lineTo(W, H); ctx.lineTo(X(off), H); ctx.closePath(); ctx.fillStyle = "rgba(111,208,199,0.10)"; ctx.fill();
+    ctx.lineTo(W, H); ctx.lineTo(X(off), H); ctx.closePath(); ctx.fillStyle = "rgba(127,220,147,0.10)"; ctx.fill();
     var v = hero.d[hero.d.length - 1];
     ctx.beginPath(); ctx.arc(W - 2, Y(v), 4, 0, Math.PI * 2); ctx.fillStyle = C.white; ctx.fill();
     $("hkT").textContent = fmt(v, 0);
