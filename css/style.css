@@ -336,3 +336,31 @@ footer a { color: #c9d6dc; }
 .contact-card dl { font-weight: 700; color: var(--ink); }
 .contact-card dt { color: var(--teal-2); }
 .contact-card a { color: var(--ink); }
+
+/* Header name, larger */
+.brand span.n { font-size: 1.6rem; }
+.brand small { font-size: 0.92rem; }
+.brand-mark { width: 52px; height: 52px; font-size: 1.65rem; border-radius: 13px; }
+.nav-in { height: 84px; }
+html { scroll-padding-top: 96px; }
+@media (max-width: 860px) { .nav-links { top: 84px; } }
+@media (max-width: 720px) {
+  .brand span.n { font-size: 1.2rem; }
+  .brand small { font-size: 0.72rem; }
+  .brand-mark { width: 42px; height: 42px; font-size: 1.3rem; }
+  .nav-in { height: 72px; }
+  .nav-links { top: 72px; }
+  .nav-in { gap: 10px; }
+  .brand { min-width: 0; flex: 1; }
+  .brand > span:last-child { min-width: 0; }
+}
+@media (max-width: 400px) {
+  .tools { grid-template-columns: 1fr; }
+  .facts-in { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fact { padding: 20px 14px; }
+  .fact b { font-size: 1.35rem; }
+  .contact-grid > * { min-width: 0; }
+  .contact-card { padding: 18px; }
+  .contact-card dl { grid-template-columns: 78px minmax(0, 1fr); }
+  .contact-card dd { overflow-wrap: anywhere; }
+}
