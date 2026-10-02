@@ -10,7 +10,7 @@ Performance and KPI analytics, process improvement, digital twins and sustainabi
 |---|---|
 | What I solve | Four problem areas: performance and KPI analytics, process improvement and quality, digital transformation and digital twins, sustainability performance and reporting |
 | Live labs | Four browser simulations: EBITDA margin bridge, control chart with capability and Welch t test, three-station production line twin, and the framework from my doctoral dissertation |
-| Project work | Links to six live prototypes in my other repositories |
+| Project work | Links to seven live projects in my other repositories |
 | Tools | Each tool is marked live only when a public demo made with it exists |
 | Funding and grant writing | Grant and funding application experience |
 | About | Background, education, certificates, teaching and publications |
@@ -33,4 +33,4 @@ No build step. Open index.html, or serve the folder with: python -m http.server 
     index.html
     css/style.css
     js/app.js
-    assets/rajan.jpg
+    Rajanbhaiya.jpg
