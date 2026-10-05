@@ -364,3 +364,11 @@ html { scroll-padding-top: 96px; }
   .contact-card dl { grid-template-columns: 78px minmax(0, 1fr); }
   .contact-card dd { overflow-wrap: anywhere; }
 }
+
+/* Profile card under the portrait */
+.idcard { margin-top: 30px; }
+.idcard .idname { display: block; font-family: var(--serif); font-size: 1.3rem; line-height: 1.2; margin-bottom: 6px; }
+.idcard .idhead { display: block; margin-top: 18px; font-size: 0.76rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal-2); }
+.langs { list-style: none; margin: 6px 0 0; padding: 0; }
+.langs li { display: flex; justify-content: space-between; padding: 6px 0; border-top: 1px solid var(--line); }
+.langs span { color: var(--ink); font-weight: 600; }
